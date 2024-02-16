@@ -18,21 +18,24 @@ body {
 	padding-inline: 100px;
 	padding-block: 30px;
 	align-items: center;
+}
+
+.top-header .name {
 	font-size: 26px;
 }
 
-.nav ul {
+nav ul {
 	display: flex;
 	list-style-type: none;
 	font-size: 14px;
 	margin-bottom: 0;
 }
 
-.nav li {
+nav li {
 	padding-inline: 10px;
 }
 
-.nav a {
+nav a {
 	text-decoration: none;
 	color: #000
 }
@@ -72,9 +75,7 @@ body {
 }
 
 #about-me {
-	flex: 2;
-	width: 80%;
-	font-size: 14px;
+	flex: 2
 }
 
 .about-me__title {
@@ -83,15 +84,15 @@ body {
 	font-size: 30px;
 }
 
-.about-me__introduction {
+#about-me h3 {
 	font-family: 'Spectral';
 	font-weight: 800;
 	font-style: italic;
 	width: 60%;
-	font-size: 1.5em;
+	font-size: 1rem;
 }
 
-#about-me {
+#about-me p {
 	width: 80%;
 	font-size: 14px;
 }
@@ -112,14 +113,14 @@ body {
 .nav-pills .nav-link.active,
 .nav-pills .show>.nav-link {
 	color: #fff;
-	background-color: #BEB45A;
+	/* background-color: #BEB45A; */
+	background-color: #685f14;
 	border-radius: 0;
 }
 
-/* travaille effectuer jusquici*/
 
 .nav-pills .nav-link {
-	color: #000;
+	color: #000
 }
 
 .item-column {
@@ -166,6 +167,7 @@ body {
 	font-family: Spectral;
 	font-style: italic;
 	font-weight: 300;
+	font-size: 2.5rem;
 
 }
 
@@ -269,6 +271,22 @@ input[type="submit"] {
 	padding: .5em 1em
 }
 
+footer {
+	display: flex;
+	justify-content: space-around;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	background-color: #BEB45A;
+}
+
+footer li {
+	list-style: none;
+}
+
+footer ul li:first-child {
+	font-weight: bold;
+}
+
 @media all and (max-width: 1180px) {
 	.picture {
 		flex: 2;
@@ -284,7 +302,7 @@ input[type="submit"] {
 		margin-bottom: 1em;
 	}
 
-	#about-me h6,
+	#about-me h3,
 	#about-me p {
 		width: 100%;
 	}
@@ -363,13 +381,13 @@ input[type="submit"] {
 		padding-inline: 0;
 	}
 
-	.top-header .nav,
-	.top-header .nav ul {
+	.top-header nav,
+	.top-header nav ul {
 		width: 100%;
 		padding: 0 0 0 0;
 	}
 
-	.top-header .nav li {
+	.top-header nav li {
 		flex: 1;
 		padding-block: 1em;
 		text-align: center;
