@@ -306,6 +306,14 @@ footer ul li:first-child {
 	#about-me p {
 		width: 100%;
 	}
+
+	img.d-block.w-100 {
+		width: 1000px;
+		/* Ajustez la largeur selon vos besoins */
+		height: auto;
+		/* Assurez-vous que la hauteur s'ajuste proportionnellement à la largeur */
+	}
+
 }
 
 @media all and (max-width: 1000px) {
@@ -373,6 +381,13 @@ footer ul li:first-child {
 		right: 0;
 		z-index: -1;
 	}
+
+	img.d-block.w-100 {
+		width: 1000px;
+		/* Ajustez la largeur selon vos besoins */
+		height: auto;
+		/* Assurez-vous que la hauteur s'ajuste proportionnellement à la largeur */
+	}
 }
 
 @media all and (max-width: 650px) {
@@ -418,5 +433,12 @@ footer ul li:first-child {
 
 	.picture {
 		width: 80%;
+	}
+
+	img.d-block.w-100 {
+		width: 650px;
+		/* Ajustez la largeur selon vos besoins */
+		height: auto;
+		/* Assurez-vous que la hauteur s'ajuste proportionnellement à la largeur */
 	}
 }
